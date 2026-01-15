@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Certificate Automator
 
-## Getting Started
+A utility tool for bulk certificate generation developed for IT Circle at KhCE.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Certificate Automator allows users to upload a PDF certificate template and a CSV file containing participant names, then automatically generates personalized certificates for each participant. The tool provides a visual interface for positioning and styling text on the certificate template.
+
+## Features
+
+- PDF template upload and preview
+- CSV-based participant name import
+- Visual text positioning with drag-and-drop interface
+- Font customization (Helvetica, Times New Roman, Courier, Great Vibes)
+- Text alignment options (left, center, right)
+- Font size and color customization
+- Bulk PDF generation and download
+
+## Prerequisites
+
+- Node.js (version 18 or higher)
+- npm or yarn package manager
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+2. Open your browser and navigate to `http://localhost:3000`
+
+3. Upload your certificate template (PDF format)
+
+4. Upload a CSV file with participant names in the first column
+
+5. Position and customize the text using the visual editor
+
+6. Click "Generate PDF" to download the certificate bundle
+
+## CSV Format
+
+The CSV file should contain participant names in the first column. Headers are automatically skipped if detected.
+
+Example:
+```
+Name
+John Doe
+Jane Smith
+Robert Johnson
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build for Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technical Stack
 
-## Learn More
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- pdf-lib for PDF generation
+- React PDF for preview
+- Papaparse for CSV handling
 
-To learn more about Next.js, take a look at the following resources:
+## Developed By
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+IT Circle, Khwopa College of Engineering
