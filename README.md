@@ -53,9 +53,9 @@ The CSV file should contain participant names in the first column. Headers are a
 Example:
 ```
 Name
-John Doe
-Jane Smith
-Robert Johnson
+Manee Das Shrestha
+Dipesh Singh
+Sajan Sahikarmi
 ```
 
 ## Build for Production
@@ -75,6 +75,6 @@ npm start
 - React PDF for preview
 - Papaparse for CSV handling
 
-## Developed By
+## Developed For
 
 IT Circle, Khwopa College of Engineering
