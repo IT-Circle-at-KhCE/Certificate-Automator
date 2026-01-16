@@ -6,6 +6,16 @@ A utility tool for bulk certificate generation developed for IT Circle at KhCE.
 
 Certificate Automator allows users to upload a PDF certificate template and a CSV file containing participant names, then automatically generates personalized certificates for each participant. The tool provides a visual interface for positioning and styling text on the certificate template.
 
+## Screenshots
+
+Below are some screenshots of the Certificate Automator in action:
+
+### Certificate Editor Interface
+![Certificate Editor Screenshot](public/images/s2.png)
+
+### Bulk Generation Preview
+![Bulk Generation Screenshot](public/images/s1.png)
+
 ## Features
 
 - PDF template upload and preview
